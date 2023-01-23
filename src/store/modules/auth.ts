@@ -135,7 +135,8 @@ const auth: Module<State, Rootstate> = {
                 const data = await axios.post(
                     `${api}/user/createUser`, signupDetails
                 );
-                commit(ACTIONS.SIGNUP_USER_SUCCESS, data.data);
+                console.log("signup test", { signupDetails })
+                commit(ACTIONS.SIGNUP_USER_SUCCESS, data);
 
             } catch (response: any) {
                 commit(ACTIONS.SIGNUP_USER_ERROR, response.response.status);

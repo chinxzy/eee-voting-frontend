@@ -190,8 +190,8 @@ export default defineComponent({
 
     async signupUser() {
       const signupDetails = {
-        firstName: this.firstName,
-        lastName: this.lastName,
+        firstname: this.firstName,
+        lastname: this.lastName,
         gender: this.gender,
         email: this.email,
         password: this.password,
