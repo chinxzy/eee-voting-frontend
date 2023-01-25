@@ -37,13 +37,13 @@ body {
         text-align: center;
         color: #3759ef;
         margin-top: 0.5em;
-        font-weight: 800;
+        font-weight: 600;
     }
 
     h2 {
         text-align: center;
         color: #3759ef;
-        font-weight: 800;
+        font-weight: 600;
         margin-bottom: 0.5em;
     }
 }
@@ -85,7 +85,9 @@ body {
     ::placeholder {
         color: #757575;
         opacity: 1;
-        font-size: 12px;
+        font-size: 14px;
+        font-weight: 600;
+
         /* Firefox */
     }
 
@@ -94,6 +96,8 @@ body {
         color: #757575;
         opacity: 1;
         font-size: 12px;
+        font-weight: 600;
+
     }
 
     ::-ms-input-placeholder {
@@ -101,12 +105,21 @@ body {
         color: #757575;
         opacity: 1;
         font-size: 12px;
+        font-weight: 600;
+
     }
 
     label {
         font-size: 12px;
         color: #757575;
+        display: none;
     }
+
+
+}
+
+input.form-control:active {
+    background: none !important;
 }
 
 .loading {
@@ -155,6 +168,10 @@ body {
     @media only screen and (max-width: 600px) {
         width: 100% !important;
     }
+}
+
+.or {
+    margin-top: 1.5em;
 }
 
 .or,
@@ -237,6 +254,7 @@ body {
     border-radius: 25px;
     box-shadow: inset 8px 8px 8px #cbced1,
         inset -8px -8px 8px #ffffff;
+    padding: 1.7em 1em 1.7em 3em !important;
 }
 
 .isDisabled {
@@ -266,6 +284,7 @@ body {
     gap: 12px !important;
     width: 100%;
     color: #ffffff !important;
+    border: none;
     box-shadow: 3px 3px 8px #b1b1b1,
         -3px -3px 8px #ffffff;
 }
