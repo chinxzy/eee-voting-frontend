@@ -17,7 +17,7 @@
           <input
             type="text"
             class="form-control"
-            placeholder="Enter FirstName"
+            placeholder="Enter Firstname"
             v-model="firstName"
             
           />
@@ -28,7 +28,7 @@
           <input
             type="text"
             class="form-control"
-            placeholder="Enter LastName"
+            placeholder="Enter Lastname"
             v-model="lastName"
           />
         </div>
@@ -180,6 +180,7 @@ export default defineComponent({
       } else if (this.authError == 419) {
         return "User with Reg Number already exists";
       }
+
     },
 
 
@@ -189,6 +190,11 @@ export default defineComponent({
     },
 
     async signupUser() {
+      if (this.password !== this.confirmPassword) {
+        alert("passwords do not match")
+        return
+        
+      }
       const signupDetails = {
         firstname: this.firstName,
         lastname: this.lastName,

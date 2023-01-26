@@ -246,8 +246,8 @@ input.form-control:active {
 }
 
 .form-control {
-    border: none;
-    outline: none;
+    border: none !important;
+    outline: none !important;
     background: none !important;
     height: 3em !important;
     margin-bottom: 30px;
