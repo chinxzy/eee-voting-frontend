@@ -248,10 +248,10 @@ input.form-control:active {
 .form-control {
     border: none;
     outline: none;
-    background: none;
+    background: none !important;
     height: 3em !important;
     margin-bottom: 30px;
-    border-radius: 25px;
+    border-radius: 25px !important;
     box-shadow: inset 8px 8px 8px #cbced1,
         inset -8px -8px 8px #ffffff;
     padding: 1.7em 1em 1.7em 3em !important;
